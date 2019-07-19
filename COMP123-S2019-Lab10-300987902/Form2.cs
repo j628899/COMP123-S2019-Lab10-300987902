@@ -19,17 +19,24 @@ namespace COMP123_S2019_Lab10_300987902
 
         private void StartForm_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(800, 600);
+            
             SplashTimer.Enabled = true;
         }
 
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
             SplashTimer.Enabled = false;
-            Hide();
             
-           
+            Program.mainForm.Show();
+            Program.startForm.Hide();
+            
 
+
+
+        }
+        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

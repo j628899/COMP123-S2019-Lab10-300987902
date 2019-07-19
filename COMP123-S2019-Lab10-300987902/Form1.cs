@@ -26,7 +26,12 @@ namespace COMP123_S2019_Lab10_300987902
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-      
+            Program.mainForm.Hide();
+            Program.endForm.Show();
+        }
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 
