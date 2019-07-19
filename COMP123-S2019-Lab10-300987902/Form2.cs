@@ -35,7 +35,7 @@ namespace COMP123_S2019_Lab10_300987902
 
         }
         private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
+        { 
             Application.Exit();
         }
     }
