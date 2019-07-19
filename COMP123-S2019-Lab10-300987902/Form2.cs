@@ -10,24 +10,26 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_300987902
 {
-    public partial class MainForm : Form
+    public partial class StartForm : Form
     {
-        public MainForm()
+        public StartForm()
         {
             InitializeComponent();
-           // Application.Run(new StartForm());
-           
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void StartForm_Load(object sender, EventArgs e)
         {
             this.Size = new Size(800, 600);
+            SplashTimer.Enabled = true;
         }
 
-        private void NextButton_Click(object sender, EventArgs e)
+        private void SplashTimer_Tick(object sender, EventArgs e)
         {
-      
+            SplashTimer.Enabled = false;
+            Hide();
+            
+           
+
         }
     }
-
 }

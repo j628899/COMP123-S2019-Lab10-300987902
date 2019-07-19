@@ -10,24 +10,21 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_300987902
 {
-    public partial class MainForm : Form
+    public partial class EndForm : Form
     {
-        public MainForm()
+        public EndForm()
         {
             InitializeComponent();
-           // Application.Run(new StartForm());
-           
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void EndForm_Load(object sender, EventArgs e)
         {
             this.Size = new Size(800, 600);
         }
 
-        private void NextButton_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-      
+            
         }
     }
-
 }
